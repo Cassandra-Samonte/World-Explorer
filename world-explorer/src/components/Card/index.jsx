@@ -1,8 +1,10 @@
-export default function Card({ countries }) {
+export default function Card({ countryData }) {
+    console.log(countryData)
+
     return (
         <figure>
             <figcaption>
-                <h2>{countries.name.common}</h2>
+                <h2>{countryData.name.common}</h2>
             </figcaption>
         </figure>
     )

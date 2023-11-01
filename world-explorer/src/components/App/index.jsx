@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route, Link } from "react-router-dom";
+import Gallery from '../Gallery'
+
 // import './styles.css'
 
 function App() {
@@ -23,7 +25,7 @@ function App() {
     return (
     <>
       <h1>World Explorer</h1>
-      {countries.length}
+      <Gallery countries={countries} />
     </>
   )
 }
