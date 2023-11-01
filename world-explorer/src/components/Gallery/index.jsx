@@ -1,13 +1,19 @@
 import Card from '../Card';
 
 export default function Gallery({ countries }) {
+    let galleryContent;
+
+    if (countries.length > 0) {
+        galleryContent = countries.map((country, index) => (
+            <Card key={index} countryData={country} />
+        ));
+    } else {
+        galleryContent = <p>Countries are loading...</p>;
+    }
+
     return (
         <div className="gallery">
-            {countries.length > 0 ? 
-                countries.map((country, index) => (
-                    <Card key={index} countryData={country} />
-                )) 
-                : <p>Countries are loading...</p>}
+            {galleryContent}
         </div>
     );
 }
