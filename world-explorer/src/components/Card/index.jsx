@@ -1,11 +1,16 @@
-export default function Card({ countryData }) {
-    console.log(countryData)
+import { Link } from 'react-router-dom'
+
+export default function Card({ countryData, updateDetails }) {
+    // console.log(countryData)
 
     return (
-        <figure>
+        <Link
+        to={"/details"}
+        onClick={() => { updateDetails(countryData) }}
+        >
             <figcaption>
                 <h2>{countryData.name.common}</h2>
             </figcaption>
-        </figure>
+        </Link>
     )
 }
