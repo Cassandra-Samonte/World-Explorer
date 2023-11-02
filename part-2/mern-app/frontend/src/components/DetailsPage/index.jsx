@@ -92,7 +92,7 @@ export default function DetailsPage({ capital, continents, currencies, populatio
                 <div className="bg-white p-4 rounded shadow-md">
                     <CommentSection countryId={cca3} />
                 </div>
-                </div>
+            </div>
         </>
     );
 }
