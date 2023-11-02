@@ -73,6 +73,7 @@ export default function commentSection({ countryId }) {
     }
 
     return (
+        <div className="pb-5">
         <div className='comment-section bg-gray-300 rounded-lg p-4 pb-10 mt-4 space-y-4 relative'>
             <h1 className='text-xl font-bold'>Travel Insights</h1>
             <button
@@ -83,7 +84,7 @@ export default function commentSection({ countryId }) {
             {
                 showCreateForm && <form
                     onSubmit={handleSubmit}
-                    className="bg-gray-100 rounded-lg p-4 my-4 border-gray-700 border-2 w-auto mx-auto text-right">
+                    className="bg-gray-100 rounded-lg p-4 my-4 border-2 w-auto mx-auto text-right">
                     <input
                         name="name"
                         className="px-2 py-1 w-full bg-gray-100"
@@ -107,6 +108,7 @@ export default function commentSection({ countryId }) {
                 </form>
             }
             {commentElements}
+        </div>
         </div>
     )
 }

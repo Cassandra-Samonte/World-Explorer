@@ -4,7 +4,6 @@ import myLogo from '../../assets/world-logo.png';
 import HomePage from '../HomePage'
 import DetailsPage from '../DetailsPage'
 import SearchPage from '../SearchPage'
-// import './styles.css'
 
 function App() {
   // Store API Data 

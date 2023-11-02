@@ -1,9 +1,9 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Card from '../Card';
 import './styles.css'
 
 
-export default function Gallery({ countries, updateDetails, setDetailsData }) {
+export default function Gallery({ countries, updateDetails }) {
   let galleryContent;
 
   if (countries.length > 0) {
