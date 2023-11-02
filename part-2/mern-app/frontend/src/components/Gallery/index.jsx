@@ -16,7 +16,7 @@ export default function Gallery({ countries, updateDetails, setDetailsData }) {
 
   return (
     <div className="flex justify-center">
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-20">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 pt-20 pb-10">
         {galleryContent}
       </div>
     </div>

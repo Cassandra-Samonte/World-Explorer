@@ -65,14 +65,15 @@ export default function DetailsPage({ capital, continents, currencies, populatio
 
     return (
         <>
+            {/* Hero Flag Image */}
             <div className="relative w-full p-10">
                 <img
                     src={flags.svg}
                     alt={flags.alt}
-                    className="w-full h-auto max-w-full opacity-30"
+                    className="w-full h-auto max-w-full opacity-20"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <h2 className="text-4xl text-white">{name.common}</h2>
+                    <h2 className="text-4xl text-gray">{name.common}</h2>
                 </div>
                 </div>
 

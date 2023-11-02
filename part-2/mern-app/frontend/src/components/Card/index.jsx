@@ -7,7 +7,7 @@ export default function Card({ countryData, updateDetails }) {
         <Link to={"/details"} onClick={() => { updateDetails(countryData) }}>
         <figure className="relative">
             <img
-                className="w-60 h-40 m-3 mt-3 object-cover opacity-30"
+                className="w-60 h-40 m-2 mt-2 object-cover opacity-30"
                 src={countryData.flags.png}
                 alt={countryData.flags.alt}
             />

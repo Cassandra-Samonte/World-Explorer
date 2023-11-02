@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route, Link } from "react-router-dom";
+import myLogo from '../../assets/world-logo.png'; 
 import HomePage from '../HomePage'
 import DetailsPage from '../DetailsPage'
 import SearchPage from '../SearchPage'
@@ -28,12 +29,14 @@ function App() {
     <>
       {/* The Nav Bar */}
         <nav className="bg-gray-200 py-4 px-6 flex justify-between items-center">
+
           <div className="flex items-center"> 
-          <img src="/assets/world-logo.png" alt="World Explorer Logo" className="w-8 h-8 mr-2" />
-              <Link to="/">
-                <h2 className="text-lg font-bold text-gray-700">World Explorer</h2>
-              </Link>
+            <img src={myLogo} alt="World Explorer Logo" className="w-12 h-12" />
+            <Link to="/">
+              <h2 className="text-lg font-bold text-gray-700 px-3">World Explorer</h2>
+            </Link>
           </div>
+
           <div className="flex items-center">
             <input
               type="text"
@@ -46,6 +49,7 @@ function App() {
               </button>
             </Link>
           </div>
+          
         </nav>
 
       {/* Routes */}
