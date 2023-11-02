@@ -1,5 +1,5 @@
 export default function DetailsPage({ capital, continents, currencies, population, languages, flags, name }) {
-    console.log(capital)
+    // console.log(capital)
 
     // Initialize variables with default values
     let capitalElement = <p>No capital data available</p>;
