@@ -1,3 +1,5 @@
+import CommentSection from '../CommentSection'
+
 export default function DetailsPage({ capital, continents, currencies, population, languages, flags, name }) {
     // console.log(capital)
 
@@ -63,15 +65,18 @@ export default function DetailsPage({ capital, continents, currencies, populatio
 
     return (
         <div>
-            <figcaption>
-                <h2>{name.common}</h2>
-                {capitalElement}
-                {continentElement}
-                {currencyElement}
-                {populationElement}
-                {languageElement}
-                {flagElement}
-            </figcaption>
+            <div>
+                <figcaption>
+                    <h2>{name.common}</h2>
+                    {capitalElement}
+                    {continentElement}
+                    {currencyElement}
+                    {populationElement}
+                    {languageElement}
+                    {flagElement}
+                </figcaption>
+            </div>
+            <CommentSection countryId={(name)} />
         </div>
     );
 }
