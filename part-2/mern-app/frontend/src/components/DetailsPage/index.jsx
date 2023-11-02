@@ -98,7 +98,7 @@ export default function DetailsPage({ capital, continents, currencies, populatio
                                 <td>{populationElement}</td>
                             </tr>
                             <tr>
-                                <td className="font-semibold">Language:</td>
+                                <td className="font-semibold">Language(s):</td>
                                 <td>{languageElement}</td>
                             </tr>
                         </tbody>
