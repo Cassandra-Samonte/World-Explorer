@@ -1,6 +1,6 @@
 import CommentSection from '../CommentSection'
 
-export default function DetailsPage({ capital, continents, currencies, population, languages, flags, name }) {
+export default function DetailsPage({ capital, continents, currencies, population, languages, flags, name, cca3 }) {
     // console.log(capital)
 
     // Initialize variables with default values
@@ -76,7 +76,7 @@ export default function DetailsPage({ capital, continents, currencies, populatio
                     {flagElement}
                 </figcaption>
             </div>
-            <CommentSection countryId={(name)} />
+            <CommentSection countryId={(cca3)} />
         </div>
     );
 }
