@@ -1,4 +1,6 @@
 import CommentSection from '../CommentSection'
+import FooterSection from '../FooterSection'
+
 
 export default function DetailsPage({ capital, continents, currencies, population, languages, flags, name, cca3 }) {
     // console.log(capital)
@@ -110,6 +112,7 @@ export default function DetailsPage({ capital, continents, currencies, populatio
                     <CommentSection countryId={cca3} />
                 </div>
             </div>
+            <FooterSection/>
         </>
     );
 }

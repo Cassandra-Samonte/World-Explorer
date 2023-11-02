@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Gallery from '../Gallery'
+import FooterSection from '../FooterSection'
 
 export default function SearchPage(props) {
     const [query, setQuery] = useState('');
@@ -18,6 +19,7 @@ export default function SearchPage(props) {
 
 
 return (
+    <>
         <div className="flex flex-col items-center pt-40">
             <form onSubmit={handleQuerySubmit} className="p-4">
                 <label htmlFor="search" className="text-gray-700 font-semibold mb-2 flex flex-col items-center">Search for a Country</label>
@@ -40,6 +42,8 @@ return (
                 updateDetails={props.setDetailsData}
             />
         </div>
+        <FooterSection />
+    </>
   );
 }
   

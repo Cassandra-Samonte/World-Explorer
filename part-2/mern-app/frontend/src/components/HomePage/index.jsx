@@ -10,7 +10,7 @@ export default function HomePage(props) {
                 countries={props.countries}
                 updateDetails={props.setDetailsData}
             />
-            <FooterSection/>
+            <FooterSection />
         </>
     );
 }
