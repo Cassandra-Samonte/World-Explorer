@@ -13,11 +13,11 @@ export default function DetailsPage({ capital, continents, currencies, populatio
 
     // Conditionally render each item if they exist
     if (capital) {
-        capitalElement = <p>Capital: {capital}</p>;
+        capitalElement = <p>{capital}</p>;
     }
 
     if (continents) {
-        continentElement = <p>Continents: {continents.join(', ')}</p>;
+        continentElement = <p>{continents.join(', ')}</p>;
     }    
 
     if (currencies) {
@@ -29,33 +29,32 @@ export default function DetailsPage({ capital, continents, currencies, populatio
         const currencySymbol = currencies[currencyCode].symbol;
         // Define a variable to display the data
         currencyElement = (
-            <p>Currency: {currencyName} ({currencySymbol})</p>
+            <p>{currencyName} ({currencySymbol})</p>
         );
     }
 
     if (population) {
-        populationElement = <p>Population: {population}</p>;
+        populationElement = <p>{population}</p>;
     }
 
     if (languages) {
-        // Convert the object into an array of [code, name] pairs
-        // Then iterate through the array of languages
-        const languageElements = Object.entries(languages).map(([code, name]) => (
-            // Create a paragraph element with an attribute to identify each paragraph
-            <p key={code}>{name}: {code}</p>
-    ));
-    // Check if there are any languages to display
-    if (languageElements.length > 0) {
-        // If there are languages, define a variable to display the languages
-        languageElement = (
-        <div>
-            <h3>Languages:</h3>
-            {languageElements}
-        </div>
-        );
-    }
-    }
+        // Convert the object into an array of language names
+        const languageNames = Object.values(languages);
 
+        // Check if there are any languages to display
+        if (languageNames.length > 0) {
+            // If there are languages, define a variable to display the languages
+            languageElement = (
+            <div>
+                <ul>
+                {languageNames.map((name, index) => (
+                    <li key={index}>{name}</li>
+                ))}
+                </ul>
+            </div>
+            );
+        }
+    }
 
     if (flags) {
         flagElement = <img src={flags.svg} alt={flags.alt} />;
@@ -77,18 +76,36 @@ export default function DetailsPage({ capital, continents, currencies, populatio
                 </div>
                 </div>
 
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
-                {/* Country Info - Right Container */}
+                {/* Country Info - Left Container */}
                 <div className="bg-white p-4 rounded shadow-md">
-                    {capitalElement}
-                    {continentElement}
-                    {currencyElement}
-                    {populationElement}
-                    {languageElement}
+                    <table className="w-full">
+                        <tbody>
+                            <tr>
+                                <td className="font-semibold">Capital:</td>
+                                <td>{capitalElement}</td>
+                            </tr>
+                            <tr>
+                                <td className="font-semibold">Continent:</td>
+                                <td>{continentElement}</td>
+                            </tr>
+                            <tr>
+                                <td className="font-semibold">Currency:</td>
+                                <td>{currencyElement}</td>
+                            </tr>
+                            <tr>
+                                <td className="font-semibold">Population:</td>
+                                <td>{populationElement}</td>
+                            </tr>
+                            <tr>
+                                <td className="font-semibold">Language:</td>
+                                <td>{languageElement}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                {/* Comments - Left Container */}
+                {/* Comments - Right Container */}
                 <div className="bg-white p-4 rounded shadow-md">
                     <CommentSection countryId={cca3} />
                 </div>
