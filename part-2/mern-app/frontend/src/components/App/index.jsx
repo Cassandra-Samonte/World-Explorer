@@ -27,22 +27,26 @@ function App() {
   return (
     <>
       {/* The Nav Bar */}
-      <nav>
-            <div>
+        <nav className="bg-gray-200 py-4 px-6 flex justify-between items-center">
+          <div className="flex items-center"> 
+          <img src="/assets/world-logo.png" alt="World Explorer Logo" className="w-8 h-8 mr-2" />
               <Link to="/">
-                <h2>World Explorer</h2>
+                <h2 className="text-lg font-bold text-gray-700">World Explorer</h2>
               </Link>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <Link to="/search">
-                    <h4>Search for a Country</h4>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-      </nav>
+          </div>
+          <div className="flex items-center">
+            <input
+              type="text"
+              placeholder="Search for a country..."
+              className="bg-white border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500"
+            />
+            <Link to="/search">
+              <button className="bg-gray-300 text-gray-700 rounded-md py-2 px-4 ml-2 focus:outline-none">
+                Search
+              </button>
+            </Link>
+          </div>
+        </nav>
 
       {/* Routes */}
       <Routes>

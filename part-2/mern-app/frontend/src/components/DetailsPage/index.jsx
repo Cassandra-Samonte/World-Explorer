@@ -58,25 +58,40 @@ export default function DetailsPage({ capital, continents, currencies, populatio
 
 
     if (flags) {
-        flagElement = <img src={flags.png} alt={flags.alt} />;
+        flagElement = <img src={flags.svg} alt={flags.alt} />;
     }
 
     // console.log(countryData.languages);
 
     return (
-        <div>
-            <div>
-                <figcaption>
-                    <h2>{name.common}</h2>
+        <>
+            <div className="relative w-full p-10">
+                <img
+                    src={flags.svg}
+                    alt={flags.alt}
+                    className="w-full h-auto max-w-full opacity-30"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <h2 className="text-4xl text-white">{name.common}</h2>
+                </div>
+                </div>
+
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+                {/* Country Info - Right Container */}
+                <div className="bg-white p-4 rounded shadow-md">
                     {capitalElement}
                     {continentElement}
                     {currencyElement}
                     {populationElement}
                     {languageElement}
-                    {flagElement}
-                </figcaption>
-            </div>
-            <CommentSection countryId={(cca3)} />
-        </div>
+                </div>
+
+                {/* Comments - Left Container */}
+                <div className="bg-white p-4 rounded shadow-md">
+                    <CommentSection countryId={cca3} />
+                </div>
+                </div>
+        </>
     );
 }
