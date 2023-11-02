@@ -17,4 +17,4 @@ export async function updateComment(comment, id) {
 export async function deleteComment(id) {
     const { data } = await axios.delete(`/api/comments/${id}`)
     return data
-}
+} 
