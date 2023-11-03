@@ -153,7 +153,7 @@ export default function DetailsPage({ capital, continents, currencies, populatio
 
             {/* Comment Section*/}
             <div className="flex justify-center items-center">
-                <div className="bg-white p-4 rounded shadow-md w-[80vw]">
+                <div className="bg-white p-4 rounded shadow-md w-[93vw]">
                     <CommentSection countryId={cca3} />
                 </div>
             </div>
