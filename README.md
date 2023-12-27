@@ -29,7 +29,7 @@ Open your web browser and go to http://localhost:3000 (or the port specified in 
 # Deployed App
 ![1](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/64e06248-f574-4a5a-bc3f-912598464f6d)
 ![2](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/6123dbaf-7309-4295-b3a9-e3d3dcb98d52)
-![3](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/9dba8076-a7b3-4b96-bc37-58a1bd857fdb)
+![Screenshot 2023-12-27 at 3 20 40 PM](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/b30356ec-e74c-415d-b9c5-ab724cc55687)
 ![Screenshot 2023-12-27 at 2 26 56 PM](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/43d01e38-7ef7-4423-8fda-030b63da8707)
 ![Screenshot 2023-12-27 at 2 27 14 PM](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/44566a65-0227-4652-9271-65b63a47119a)
 ![Screenshot 2023-12-27 at 2 25 44 PM](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/fd8d0ea3-6322-4138-b126-4b9751541b27)
