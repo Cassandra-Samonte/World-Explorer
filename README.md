@@ -2,7 +2,7 @@
 <img width="1505" alt="Screenshot 2023-12-27 at 3 17 49 PM" src="https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/f31bcadc-47a6-4d30-b2c4-16d1cbe796f2">
 
 # World Explorer
-World Explorer is a MERN Stack CRUD application leveraging the REST Countries API to present comprehensive information on the countries of the world.
+World Explorer is a MERN Stack CRUD application leveraging the REST Countries API to present comprehensive information of the countries of the world.
 
 # Installation Instructions
 To set up and run World Explorer locally on your machine, please follow these steps:
