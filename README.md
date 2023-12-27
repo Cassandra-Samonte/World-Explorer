@@ -17,7 +17,7 @@ Navigate to the cloned repository's directory and install the necessary dependen
 	npm install
 ## Step 3: Set Up Environment Variables
 Create a .env file in the root directory of the project. You will need to set the following environment variables:
-* MONGO_URI - your MongoDB connection string
+* MONGODBURI - your MongoDB connection string
 * PORT=3000
 ## Step 4: Start the Application
 Once all dependencies are installed and environment variables are set, you can start the application by running:
