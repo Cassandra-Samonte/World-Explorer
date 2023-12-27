@@ -5,7 +5,7 @@ export default function Card({ countryData, updateDetails }) {
 
   return (
     <Link to={"/details"} onClick={() => { updateDetails(countryData) }}>
-      <figure className="relative group">
+      <figure className="relative group w-140 h-100 shadow-lg bg-white p-3 hover:scale-105 bg-opacity-30">
         <img
           className="w-60 h-40 m-1 mt-1 object-cover opacity-30 group-hover:opacity-100 transition-opacity duration-300"
           src={countryData.flags.png}
