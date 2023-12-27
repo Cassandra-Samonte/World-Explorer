@@ -26,7 +26,8 @@ This will start the server and the React application. You should see a message i
 ## Step 5: Access the Application
 Open your web browser and go to http://localhost:3000 (or the port specified in your terminal). You should now be able to see and interact with the World Explorer application.
 
-[# Deployed App](https://world-explorer-app-f6d02e2c7535.herokuapp.com/)
+# Deployed App
+## https://world-explorer-app-f6d02e2c7535.herokuapp.com/
 ![1](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/64e06248-f574-4a5a-bc3f-912598464f6d)
 ![2](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/6123dbaf-7309-4295-b3a9-e3d3dcb98d52)
 ![Screenshot 2023-12-27 at 3 20 40 PM](https://github.com/Cassandra-Samonte/World-Explorer/assets/142133887/b30356ec-e74c-415d-b9c5-ab724cc55687)
